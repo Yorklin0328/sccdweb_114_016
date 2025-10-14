@@ -1,0 +1,24 @@
+* {
+  border: 2px solid black;
+}
+
+.head {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: blue;
+}
+
+.menu {
+  background-color: green;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+.social {
+  background-color: blueviolet;
+  display: flex;
+}
