@@ -1,23 +1,34 @@
+index.html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>我的 Coding 練習成果</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   </head>
   <body>
     <div class="head">
       <div class="logo">
         <div class="logoim">
-          <img src="yorryorr.jpg" alt="img" widdth="50px" />
+          <img src="yorryorr.jpg" alt="img" width="50px" />
         </div>
       </div>
       <div class="menu">
-        <div class="link"></div>
-        <div class="mainpage"><p>首頁</p></div>
-        <div class="news"><p>新聞</p></div>
+        <button class="nav-btn" onclick="playSketch('ball')">球落下</button>
+        <button class="nav-btn" onclick="playSketch('gradient')">
+          漸層教學
+        </button>
+        <button class="nav-btn" onclick="playSketch('robot')">機器人</button>
       </div>
     </div>
+
+    <div class="main-content">
+      <h2 id="sketch-title">點擊上方按鈕查看動畫</h2>
+      <div id="canvas-parent"></div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,24 +1,53 @@
-* {
+style.css * {
   border: 2px solid black;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", sans-serif;
+  background-color: #f9f9f9;
 }
 
 .head {
   background-color: brown;
   display: flex;
   justify-content: space-between;
-}
-
-.logo {
-  background-color: blue;
+  padding: 10px;
+  align-items: center;
 }
 
 .menu {
   background-color: green;
   display: flex;
-  width: 300px;
-  justify-content: space-around;
+  gap: 15px;
+  padding: 10px;
 }
-.social {
-  background-color: blueviolet;
+
+/* 按鈕美化 */
+.nav-btn {
+  background: white;
+  border: 3px solid black;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-btn:hover {
+  background: yellow;
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px;
+}
+
+#canvas-parent {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  min-height: 450px;
+  background: white;
 }
