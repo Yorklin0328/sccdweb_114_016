@@ -3,31 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我的 Coding 練習成果</title>
+    <title>Programming Lab</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   </head>
   <body>
-    <div class="head">
-      <div class="logo">
-        <div class="logoim">
-          <img src="yorryorr.jpg" alt="img" width="50px" />
+    <div class="app-container">
+      <header class="navbar">
+        <div class="site-id">LAB-A113144016</div>
+        <div class="nav-links">
+          <button class="nav-item" onclick="startSketch('ball')">BOUNCE</button>
+          <button class="nav-item" onclick="startSketch('box')">
+            3D-SPACE
+          </button>
+          <button class="nav-item" onclick="startSketch('robot')">ROBOT</button>
+          <button class="nav-item" onclick="startSketch('gradient')">
+            GRADIENT
+          </button>
         </div>
-      </div>
-      <div class="menu">
-        <button class="nav-btn" onclick="playSketch('ball')">球落下</button>
-        <button class="nav-btn" onclick="playSketch('gradient')">
-          漸層教學
-        </button>
-        <button class="nav-btn" onclick="playSketch('robot')">機器人</button>
-      </div>
-    </div>
+      </header>
 
-    <div class="main-content">
-      <h2 id="sketch-title">點擊上方按鈕查看動畫</h2>
-      <div id="canvas-parent"></div>
+      <main class="display-panel">
+        <div class="status-bar">
+          <span id="sketch-name">IDLE...</span>
+          <span class="system-time">SYSTEM ACTIVE</span>
+        </div>
+        <div id="p5-canvas"></div>
+      </main>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

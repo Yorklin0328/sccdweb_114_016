@@ -1,53 +1,80 @@
 * {
-  border: 2px solid black;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Microsoft JhengHei", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #050505;
+  color: #00ffcc;
+  font-family: "Segoe UI", "Roboto", "Oxygen", sans-serif;
 }
 
-.head {
-  background-color: brown;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  align-items: center;
-}
-
-.menu {
-  background-color: green;
-  display: flex;
-  gap: 15px;
-  padding: 10px;
-}
-
-/* 按鈕美化 */
-.nav-btn {
-  background: white;
-  border: 3px solid black;
-  padding: 8px 15px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.nav-btn:hover {
-  background: yellow;
-}
-
-.main-content {
-  text-align: center;
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-#canvas-parent {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.site-id {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item {
+  background: transparent;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  padding: 8px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  background: #00ffcc;
+  color: #000;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.display-panel {
+  border: 1px solid #333;
+  background: #000;
+}
+
+.status-bar {
+  background: #111;
+  padding: 10px 15px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+#p5-canvas {
+  width: 100%;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  min-height: 450px;
-  background: white;
+  overflow: hidden;
+}
+
+canvas {
+  max-width: 100%;
 }
